@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "com.envirofoq.client.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"FogRendererMixin",
+		"GameRendererMixin",
+		"SodiumOptionsGUIMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

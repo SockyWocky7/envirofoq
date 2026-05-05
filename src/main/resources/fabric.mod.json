@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "envirofoq",
+	"version": "${version}",
+	"name": "EnviroFoq",
+	"description": "Backports atmospheric/environmental fog from newer Minecraft versions to 1.21.1, with biome colour tinting. Designed to work with Voxy LOD rendering.",
+	"authors": [
+		"SockyWocky"
+	],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.envirofoq.client.EnviroFoqClient"
+		]
+	},
+	"mixins": [
+		"envirofoq.mixins.json",
+		{
+			"config": "envirofoq.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"sodium": "*"
+	}
+}
